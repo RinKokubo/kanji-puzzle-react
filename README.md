@@ -1,7 +1,11 @@
 # kanji-puzzle-react
 GDSCの実装勉強会向け教材です。\
 モダンフロントエンド入門として、Reactを使用しています。\
-CSSはtailwindcssで書いています。
+
+## CSSについて
+CSSはtailwindcssで書いています。\
+レスポンシブデザインになるよう、desktopとspでスタイルを分けて指定しています。\
+spは896px以下の画面として定義しています（tailwind.config.js参照）
 
 # Getting Started with Create React App
 
