@@ -1,6 +1,6 @@
 # kanji-puzzle-react
 GDSCの実装勉強会向け教材です。\
-モダンフロントエンド入門として、Reactを使用しています。\
+モダンフロントエンド入門として、Reactを使用しています。
 
 ## CSSについて
 CSSはtailwindcssで書いています。\
