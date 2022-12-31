@@ -201,21 +201,21 @@ function App() {
     <div className='bg-yellow-100 min-h-screen static sp:px-[15px] desktop:px-0 flex flex-col items-center'>
       <Header />
       
-      <div className='flex items-center'>
+      {/*<div className='flex items-center'>
         <input name="答え" type="text" id="answerText" placeholder="漢字２文字で入力" onkeypress={enter(this)}
               className='border border-gray-500 pl-[8px] py-[3px]'/>
-        <button onclick={createPuzzleProcess()} className='bg-blue-500 text-white py-[4px] px-[10px] ml-[20px] font-bold'> 生成</button>
-      </div>
+        <button onClick={createPuzzleProcess()} className='bg-blue-500 text-white py-[4px] px-[10px] ml-[20px] font-bold'> 生成</button>
+  </div>*/}
 
       <div className='my-[30px]'>
-        <input type="radio" id="blue" name="tempColor" value="blue" checked onclick={colorChange()} className='mr-[6px]'/>
-        <label for="blue" className='pr-[20px]'>Blue</label>
-        <input type="radio" id="green" name="tempColor" value="green" onclick={colorChange()} className='mr-[6px]'/>
-        <label for="green" className='pr-[20px]'>Green</label>
-        <input type="radio" id="orange" name="tempColor" value="orange" onclick={colorChange()} className='mr-[6px]'/>
-        <label for="orange" className='pr-[20px]'>Orange</label>    
-        <input type="radio" id="pink" name="tempColor" value="pink" onclick={colorChange()} className='mr-[6px]'/>
-        <label for="pink">Pink</label>
+        <input type="radio" id="blue" name="tempColor" value="blue" defaultChecked onClick={colorChange()} className='mr-[6px]'/>
+        <label htmlFor="blue" className='pr-[20px]'>Blue</label>
+        <input type="radio" id="green" name="tempColor" value="green" onClick={colorChange()} className='mr-[6px]'/>
+        <label htmlFor="green" className='pr-[20px]'>Green</label>
+        <input type="radio" id="orange" name="tempColor" value="orange" onClick={colorChange()} className='mr-[6px]'/>
+        <label htmlFor="orange" className='pr-[20px]'>Orange</label>    
+        <input type="radio" id="pink" name="tempColor" value="pink" onClick={colorChange()} className='mr-[6px]'/>
+        <label htmlFor="pink">Pink</label>
       </div>
 
       <div id="createResult"></div>
