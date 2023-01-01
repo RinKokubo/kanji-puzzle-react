@@ -201,11 +201,11 @@ function App() {
     <div className='bg-yellow-100 min-h-screen static sp:px-[15px] desktop:px-0 flex flex-col items-center'>
       <Header />
       
-      {/*<div className='flex items-center'>
+      <div className='flex items-center'>
         <input name="答え" type="text" id="answerText" placeholder="漢字２文字で入力" onkeypress={enter(this)}
               className='border border-gray-500 pl-[8px] py-[3px]'/>
         <button onClick={createPuzzleProcess()} className='bg-blue-500 text-white py-[4px] px-[10px] ml-[20px] font-bold'> 生成</button>
-  </div>*/}
+      </div>
 
       <div className='my-[30px]'>
         <input type="radio" id="blue" name="tempColor" value="blue" defaultChecked onClick={colorChange()} className='mr-[6px]'/>
