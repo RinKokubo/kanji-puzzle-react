@@ -1,4 +1,5 @@
 //import { BrowserRouter, Route } from 'react-router-dom';
+import React, { useState } from "react";
 import { Header } from './components/header';
 import { Footer } from './components/footer';
 import { puzzleList } from './puzzleList';
@@ -6,6 +7,7 @@ import { puzzleIndexMap } from './puzzleList';
 
 function App() {
   let puzzle = [];
+  const [answer, setAnswer] = useState("");
 
   //パズルのテンプレートを読み込む
   function loadTemp(id, scale) {
@@ -141,7 +143,6 @@ function App() {
 
   //パズル作成＆出力
   function createPuzzleProcess() {
-    let answer = document.getElementById("answerText").value;
     puzzle = createPuzzle('puzzleCanvas', answer);
     if (puzzle !== false) {
       const promise = new Promise(function (resolve, reject) {
@@ -203,7 +204,7 @@ function App() {
       
       <div className='flex items-center'>
         <input name="答え" type="text" id="answerText" placeholder="漢字２文字で入力" onkeypress={enter(this)}
-              className='border border-gray-500 pl-[8px] py-[3px]'/>
+              className='border border-gray-500 pl-[8px] py-[3px]' value={answer}/>
         <button onClick={createPuzzleProcess()} className='bg-blue-500 text-white py-[4px] px-[10px] ml-[20px] font-bold'> 生成</button>
       </div>
 
