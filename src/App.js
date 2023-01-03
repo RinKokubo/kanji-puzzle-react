@@ -209,13 +209,13 @@ function App() {
       </div>
 
       <div className='my-[30px]'>
-        <input type="radio" id="blue" name="tempColor" value="blue" defaultChecked onClick={colorChange()} className='mr-[6px]'/>
+        <input type="radio" id="blue" name="tempColor" value={blue} defaultChecked onClick={colorChange()} className='mr-[6px]'/>
         <label htmlFor="blue" className='pr-[20px]'>Blue</label>
-        <input type="radio" id="green" name="tempColor" value="green" onClick={colorChange()} className='mr-[6px]'/>
+        <input type="radio" id="green" name="tempColor" value={green} onClick={colorChange()} className='mr-[6px]'/>
         <label htmlFor="green" className='pr-[20px]'>Green</label>
-        <input type="radio" id="orange" name="tempColor" value="orange" onClick={colorChange()} className='mr-[6px]'/>
+        <input type="radio" id="orange" name="tempColor" value={orange} onClick={colorChange()} className='mr-[6px]'/>
         <label htmlFor="orange" className='pr-[20px]'>Orange</label>    
-        <input type="radio" id="pink" name="tempColor" value="pink" onClick={colorChange()} className='mr-[6px]'/>
+        <input type="radio" id="pink" name="tempColor" value={pink} onClick={colorChange()} className='mr-[6px]'/>
         <label htmlFor="pink">Pink</label>
       </div>
 
